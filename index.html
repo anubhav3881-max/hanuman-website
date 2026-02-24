@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap.css">
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo">🔱 Bajrang Bali</div>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#chalisa">Chalisa</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#aarti">Aarti</a></li>
+            </ul>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+    <!-- navigation bar end -->
+    <section id="home" class="hero-section">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1 class="hero-title">Jai Bajrang Bali 🚩</h1>
+    <p class="hero-subtitle">• Shakti • Bhakti • Nishtha</p>
+
+    <div class="hero-buttons">
+      <button id="readChalisa">📖 Read Chalisa</button>
+      <button id="playHeroAarti">🎵 Play Aarti</button>
+    </div>
+  </div>
+
+  <!-- Optional Background Music -->
+  <audio id="heroAudio" src="audio/Shree Hanuman Ji Ki Aarti.mp3" loop></audio>
+
+</section>
+    <!-- about -->
+    <section id="about" class="about-section fade-section">
+        <div class="about-container">
+
+            <!-- Left Image -->
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Hanuman Ji">
+            </div>
+
+            <!-- Right Content -->
+            <div class="about-content">
+                <h2>About Hanuman Ji</h2>
+                <p>
+                    Hanuman Ji shakti, bhakti aur nishtha ke sarvottam pratik hain.
+                    Unki Shri Ram ke prati atoot bhakti aur apar bal unhe
+                    amar aur adarsh banata hai.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <h3>🔶 Shakti</h3>
+                        <p>Asim bal aur sahas ka pratik</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>🔥 Bhakti</h3>
+                        <p>Nishkaam prem aur samarpan</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3>🚩 Nishtha</h3>
+                        <p>Atal vishwas aur kartavya</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="chalisa" class="chalisa-section">
+        <div class="chalisa-card">
+
+            <h2 class="chalisa-heading">📖 Hanuman Chalisa</h2>
+
+            <div class="chalisa-buttons">
+                <button id="toggleChalisa">Show Chalisa</button>
+                <button id="playAudio">▶ Play</button>
+            </div>
+
+            <div id="chalisaContent" class="chalisa-content">
+                <p>
+                    ॥ श्रीगुरु चरन सरोज रज निज मन मुकुर सुधारि ॥ <br>
+                    बरनऊं रघुवर बिमल जसु जो दायक फल चारि ॥ <br><br>
+
+                    बुद्धिहीन तनु जानिके सुमिरौं पवन कुमार ।<br>
+                    बल बुद्धि विद्या देहु मोहिं हरहु कलेश विकार ॥<br><br>
+
+                    जय हनुमान ज्ञान गुन सागर ।<br>
+                    जय कपीस तिहुँ लोक उजागर ॥<br><br>
+
+                    रामदूत अतुलित बल धामा।<br>
+                    अंजनि-पुत्र पवनसुत नामा।।<br><br>
+
+                    महाबीर बिक्रम बजरंगी।<br>
+                    कुमति निवार सुमति के संगी।।<br><br>
+
+                    कंचन बरन बिराज सुबेसा।<br>
+                    कानन कुंडल कुंचित केसा।।<br><br>
+
+                    हाथ बज्र औ ध्वजा बिराजै।<br>
+                    कांधे मूंज जनेऊ साजै।<br><br>
+
+
+                    संकर सुवन केसरीनंदन।<br>
+                    तेज प्रताप महा जग बन्दन।।<br><br>
+
+                    विद्यावान गुनी अति चातुर।<br>
+                    राम काज करिबे को आतुर।।<br><br>
+
+                    प्रभु चरित्र सुनिबे को रसिया।<br>
+                    राम लखन सीता मन बसिया।।<br><br>
+
+                    सूक्ष्म रूप धरि सियहिं दिखावा।<br>
+                    बिकट रूप धरि लंक जरावा।।<br><br>
+
+                    भीम रूप धरि असुर संहारे।<br>
+                    रामचंद्र के काज संवारे।।<br><br>
+
+                    लाय सजीवन लखन जियाये।<br>
+                    श्रीरघुबीर हरषि उर लाये।।<br><br>
+
+                    रघुपति कीन्ही बहुत बड़ाई।<br>
+                    तुम मम प्रिय भरतहि सम भाई।।<br><br>
+
+                    सहस बदन तुम्हरो जस गावैं।<br>
+                    अस कहि श्रीपति कंठ लगावैं।।<br><br>
+
+                    सनकादिक ब्रह्मादि मुनीसा।<br>
+                    नारद सारद सहित अहीसा।।<br><br>
+
+                    जम कुबेर दिगपाल जहां ते।<br>
+                    कबि कोबिद कहि सके कहां ते।।<br><br>
+
+                    तुम उपकार सुग्रीवहिं कीन्हा।<br>
+                    राम मिलाय राज पद दीन्हा।।<br><br>
+
+                    तुम्हरो मंत्र बिभीषन माना।<br>
+                    लंकेस्वर भए सब जग जाना।।<br><br>
+
+                    जुग सहस्र जोजन पर भानू।<br>
+                    लील्यो ताहि मधुर फल जानू।।<br><br>
+
+                    प्रभु मुद्रिका मेलि मुख माहीं।<br>
+                    जलधि लांघि गये अचरज नाहीं।।<br><br>
+
+                    दुर्गम काज जगत के जेते।<br>
+                    सुगम अनुग्रह तुम्हरे तेते।।<br><br>
+
+                    राम दुआरे तुम रखवारे।<br>
+                    होत न आज्ञा बिनु पैसारे।।<br><br>
+
+                    सब सुख लहै तुम्हारी सरना।<br>
+                    तुम रक्षक काहू को डर ना।।<br><br>
+
+                    आपन तेज सम्हारो आपै।<br>
+                    तीनों लोक हांक तें कांपै।।<br><br>
+
+                    भूत पिसाच निकट नहिं आवै।<br>
+                    महाबीर जब नाम सुनावै।।<br><br>
+
+                    नासै रोग हरै सब पीरा।<br>
+                    जपत निरंतर हनुमत बीरा।।<br><br>
+
+                    संकट तें हनुमान छुड़ावै।<br>
+                    मन क्रम बचन ध्यान जो लावै।।<br><br>
+
+                    सब पर राम तपस्वी राजा।<br>
+                    तिन के काज सकल तुम साजा।<br><br>
+
+                    और मनोरथ जो कोई लावै।<br>
+                    सोइ अमित जीवन फल पावै।।<br><br>
+
+                    चारों जुग परताप तुम्हारा।<br>
+                    है परसिद्ध जगत उजियारा।।<br><br>
+
+                    साधु-संत के तुम रखवारे।<br>
+                    असुर निकंदन राम दुलारे।।<br><br>
+
+                    अष्ट सिद्धि नौ निधि के दाता।<br>
+                    अस बर दीन जानकी माता।।<br><br>
+
+                    राम रसायन तुम्हरे पासा।<br>
+                    सदा रहो रघुपति के दासा।।<br><br>
+
+                    तुम्हरे भजन राम को पावै।<br>
+                    जनम-जनम के दुख बिसरावै।।<br><br>
+
+                    अन्तकाल रघुबर पुर जाई।<br>
+                    जहां जन्म हरि-भक्त कहाई।।<br><br>
+
+                    और देवता चित्त न धरई।<br>
+                    हनुमत सेइ सर्ब सुख करई।।<br><br>
+
+                    संकट कटै मिटै सब पीरा।<br>
+                    जो सुमिरै हनुमत बलबीरा।।<br><br>
+
+                    जै जै जै हनुमान गोसाईं।<br>
+                    कृपा करहु गुरुदेव की नाईं।।<br><br>
+
+                    जो सत बार पाठ कर कोई।<br>
+                    छूटहि बंदि महा सुख होई।।<br><br>
+
+                    जो यह पढ़ै हनुमान चालीसा।<br>
+                    होय सिद्धि साखी गौरीसा।।<br><br>
+
+                    तुलसीदास सदा हरि चेरा।<br>
+                    कीजै नाथ हृदय मंह डेरा।। <br><br>
+
+                    <b>दोहा :</b><br><br>
+ 
+                    <b>पवन तनय संकट हरन, मंगल मूरति रूप।</b><br>
+                    <b>राम लखन सीता सहित, हृदय बसहु सुर भूप।।</b><br><br>
+
+                    <!-- Yahan full chalisa paste kar sakte ho -->
+                </p>
+            </div>
+
+            <audio id="chalisaAudio" src="audio/Shree Hanuman Chalisa - 320Kbps-(Mr-Jat.in).mp3"></audio>
+
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+        <h2 class="gallery-heading">🕉 Divine Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="images/blessiing hanuman ji.jpg" alt="Hanuman Blessing">
+                <div class="overlay">Blessing Form</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/panchmukhi avtar.jpg" alt="Panchmukhi Hanuman">
+                <div class="overlay">Panchmukhi Avatar</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/sanjivain.jpg" alt="Flying Hanuman">
+                <div class="overlay">Sanjeevani Parvat</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/meditation.jpg" alt="Meditation">
+                <div class="overlay">Divine Meditation</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/sacredtemple.jfif" alt="Temple">
+                <div class="overlay">Sacred Temple</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/worior form.jpg" alt="Warrior Form">
+                <div class="overlay">Warrior Form</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+    <section id="aarti" class="aarti-section">
+        <div class="aarti-container">
+
+            <h2 class="aarti-heading">🪔 Hanuman Ji Aarti</h2>
+
+            <p class="aarti-text">
+                Om Jai Hanuman Gyan Gun Sagar,
+                Jai Kapis Tihu Lok Ujagar…
+                <br><br>
+                Sankat se Hanuman chudave,
+                Man Karam Vachan dhyan jo lave…
+            </p>
+
+            <button id="aartiBtn" class="aarti-btn">▶ Play Aarti</button>
+
+            <audio id="aartiAudio" src="audio/Shree Hanuman Ji Ki Aarti.mp3"></audio>
+
+        </div>
+
+        <!-- Floating Diya Effect -->
+        <div class="diya diya1"></div>
+        <div class="diya diya2"></div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2 class="footer-title">🚩 Jai Shri Ram 🚩</h2>
+
+            <!-- <div class="social-links">
+                <a href="#" target="_blank">🌐</a>
+                <a href="#" target="_blank">📸</a>
+                <a href="#" target="_blank">💼</a>
+            </div> -->
+
+            <p class="footer-text">
+                Made with ❤️ by <span>Anubhav</span>
+            </p>
+
+        </div>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollTopBtn" class="scroll-top">⬆</button>
+
+    </footer>
+</body>
+<script>
+    const fadeSections = document.querySelectorAll(".fade-section");
+
+    window.addEventListener("scroll", () => {
+        fadeSections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            if (sectionTop < window.innerHeight - 100) {
+                section.classList.add("visible");
+            }
+        });
+    });
+    // next js
+    const toggleBtn = document.getElementById("toggleChalisa");
+    const chalisaContent = document.getElementById("chalisaContent");
+    const audio = document.getElementById("chalisaAudio");
+    const playBtn = document.getElementById("playAudio");
+
+    toggleBtn.addEventListener("click", () => {
+        chalisaContent.classList.toggle("show");
+
+        if (chalisaContent.classList.contains("show")) {
+            toggleBtn.textContent = "Hide Chalisa";
+            chalisaContent.scrollTop = 0;
+
+            window.scrollTo({
+                top: document.getElementById("chalisa").offsetTop - 50,
+                behavior: "smooth"
+            });
+        } else {
+            toggleBtn.textContent = "Show Chalisa";
+        }
+    });
+
+    /* Audio Play/Pause */
+    playBtn.addEventListener("click", () => {
+        if (audio.paused) {
+            audio.play();
+            playBtn.textContent = "⏸ Pause";
+        } else {
+            audio.pause();
+            playBtn.textContent = "▶ Play";
+        }
+    });
+
+    // next section js
+    const galleryItems = document.querySelectorAll(".gallery-item img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close-btn");
+
+    galleryItems.forEach(img => {
+        img.addEventListener("click", () => {
+            lightbox.style.display = "flex";
+            lightboxImg.src = img.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
+
+    lightbox.addEventListener("click", (e) => {
+        if (e.target !== lightboxImg) {
+            lightbox.style.display = "none";
+        }
+    });
+    // next section
+    const aartiBtn = document.getElementById("aartiBtn");
+    const aartiAudio = document.getElementById("aartiAudio");
+
+    aartiBtn.addEventListener("click", () => {
+        if (aartiAudio.paused) {
+            aartiAudio.play();
+            aartiBtn.textContent = "⏸ Pause Aarti";
+        } else {
+            aartiAudio.pause();
+            aartiBtn.textContent = "▶ Play Aarti";
+        }
+    });
+
+    /* Reset button text when audio ends */
+    aartiAudio.addEventListener("ended", () => {
+        aartiBtn.textContent = "▶ Play Aarti";
+    });
+    // navbar
+    const navbar = document.getElementById("navbar");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    /* Navbar background change on scroll */
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+
+    /* Mobile menu toggle */
+    hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+
+    /* Close menu when link clicked (mobile) */
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+        });
+    });
+    // next section
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+/* Show button when scrolling */
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
+  }
+});
+
+/* Smooth scroll to top */
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+// next section
+const readBtn = document.getElementById("readChalisa");
+const playHeroBtn = document.getElementById("playHeroAarti");
+const heroAudio = document.getElementById("heroAudio");
+
+/* Smooth Scroll to Chalisa */
+readBtn.addEventListener("click", () => {
+  document.getElementById("chalisa").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+
+/* Background Aarti Toggle */
+playHeroBtn.addEventListener("click", () => {
+  if (heroAudio.paused) {
+    heroAudio.play();
+    playHeroBtn.textContent = "⏸ Stop Music";
+  } else {
+    heroAudio.pause();
+    playHeroBtn.textContent = "🎵 Play Aarti";
+  }
+});
+</script>
+
+</html>
